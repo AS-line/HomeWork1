@@ -77,7 +77,7 @@ print('далее...')
 time.sleep(1)
 print('Десятый вопрос--->Первый развлекательный сайт в России')
 q10 = str(input('Ответ: '))
-if q10 == 'anekdot.ru' or 'Anekdot.ru' or 'Анекдот.ру':
+if q10 == 'anekdot.ru' or 'Anekdot.ru' or 'Анекдот.ру' or 'анекдот.ру':
 	score +=1
 else:
 	score -=1
