@@ -54,7 +54,7 @@ def show_profile():
 	descriptor = sqlite3.connect('DATA.db')
 	runner = descriptor.cursor()
 
-	runner.execute("SELECT name, sername, language, age, country FROM profiles_data WHERE login =: true_login")
+	runner.execute("SELECT name, sername, language, age, country FROM profiles_data WHERE login = true_login")
 	profile_data = runner.fetchall()
 	print(profile_data)
 
